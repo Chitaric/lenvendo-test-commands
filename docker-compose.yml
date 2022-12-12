@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  test:
+    build: docker-config/php/dev
+    container_name: chitaric-lenvendo-test-commands
+    working_dir: /application
+    volumes:
+      - ./:/application
