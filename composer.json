@@ -14,7 +14,7 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "php": "^7.2 | ^8.0",
+    "php": "^7.2 | ^8.0",    
     "composer-runtime-api": "^2.2"
   },
   "require-dev": {
@@ -24,14 +24,14 @@
   "suggest": {},
   "autoload": {
     "psr-4": {
-      "HiHub\\PHP\\Template\\": [
+      "Chitaric\\Lenvendo\\ConsoleCommands\\": [
         "src/"
       ]
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Chitaric\\Lenvendo\\Console\\": [
+      "Chitaric\\Lenvendo\\ConsoleCommands\\Tests\\": [
         "tests/"
       ]
     }
