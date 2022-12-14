@@ -30,7 +30,7 @@ class CommandManager
     public static function registerCommand(string $class)
     {
         if (class_exists($class) && is_a($class, CommandInterface::class, true)) {
-            static::$commands[$class::NAME] = $class;
+            static::$commands[$class::getName()] = $class;
         }
     }
 
