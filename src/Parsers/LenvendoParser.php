@@ -13,7 +13,7 @@ class LenvendoParser implements ParserInterface
     public function getArguments(string $input)
     {
         preg_match("/^{(.+)}$/", $input, $match);
-        return explode(",", $match);
+        return $match[1] ? explode(",", $match[1]) : [];
     }
 
     /**

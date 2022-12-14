@@ -10,9 +10,9 @@ abstract class Input implements InputInterface
     
     protected array $tokens = [];
 
-    protected string $command;
-    protected $arguments  = [];
-    protected $parameters = [];
+    protected ?string $command;
+    protected array $arguments  = [];
+    protected array $parameters = [];
 
     public function __construct(ParserInterface $parser = null)
     {
